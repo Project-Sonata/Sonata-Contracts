@@ -1,0 +1,21 @@
+{
+  "id" : "cade50a3-b81f-4fe3-92aa-1b549014471a",
+  "request" : {
+    "url" : "/token/info",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['token'] == 'invalidtoken')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"valid\":false,\"iat\":0,\"expires_in\":0}",
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "cade50a3-b81f-4fe3-92aa-1b549014471a"
+}
