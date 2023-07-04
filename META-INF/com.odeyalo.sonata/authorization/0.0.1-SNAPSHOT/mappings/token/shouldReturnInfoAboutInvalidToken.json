@@ -1,5 +1,5 @@
 {
-  "id" : "f8e178dc-8db7-430d-b830-cf1f995d28b1",
+  "id" : "2b6ee326-07a4-4458-ab0e-4b88b241c0a2",
   "request" : {
     "url" : "/token/info",
     "method" : "POST",
@@ -17,5 +17,5 @@
     "body" : "{\"valid\":false,\"iat\":0,\"expires_in\":0}",
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "f8e178dc-8db7-430d-b830-cf1f995d28b1"
+  "uuid" : "2b6ee326-07a4-4458-ab0e-4b88b241c0a2"
 }
