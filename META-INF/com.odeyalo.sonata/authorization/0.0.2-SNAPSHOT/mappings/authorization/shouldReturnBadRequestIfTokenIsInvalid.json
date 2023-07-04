@@ -1,0 +1,24 @@
+{
+  "id" : "2e321f82-d7b3-440e-a631-0c11a36fee9b",
+  "request" : {
+    "url" : "/authorization/register/confirm",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['data'] == '900')]"
+    } ]
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\"confirmed\":false}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "2e321f82-d7b3-440e-a631-0c11a36fee9b"
+}

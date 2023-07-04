@@ -1,0 +1,24 @@
+{
+  "id" : "bb36d4b4-97d3-4b6d-8490-642f4e5083a1",
+  "request" : {
+    "url" : "/token/info",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['token'] == 'mikunakanoisthebestgirl')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"valid\":true,\"user_id\":\"1\",\"scope\":\"read write\",\"iat\":-741601124,\"expires_in\":\"([1-9]\\\\d*)\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "bb36d4b4-97d3-4b6d-8490-642f4e5083a1"
+}

@@ -1,0 +1,24 @@
+{
+  "id" : "6b55539e-ce47-420d-bdfc-1a7c3e6c05b1",
+  "request" : {
+    "url" : "/authorization/register/confirm",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['data'] == '123')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"confirmed\":true,\"tokens\":{\"access_token\":{\"value\":\"MikuNakanoIsMyLove\",\"expires_in\":3600}}}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "6b55539e-ce47-420d-bdfc-1a7c3e6c05b1"
+}
