@@ -1,5 +1,5 @@
 {
-  "id" : "d763f5d3-c0ff-4e23-912e-873cbbfa1e31",
+  "id" : "025a7de0-2ebb-4df2-8aca-8c3c902bc68d",
   "request" : {
     "url" : "/token/info",
     "method" : "POST",
@@ -14,8 +14,8 @@
   },
   "response" : {
     "status" : 200,
-    "body" : "{\"valid\":true,\"user_id\":\"1\",\"scope\":\"read write\",\"iat\":-1760301846,\"expires_in\":\"([1-9]\\\\d*)\"}",
+    "body" : "{\"valid\":true,\"user_id\":\"1\",\"scope\":\"read write\",\"iat\":-2064641132,\"expires_in\":\"([1-9]\\\\d*)\"}",
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "d763f5d3-c0ff-4e23-912e-873cbbfa1e31"
+  "uuid" : "025a7de0-2ebb-4df2-8aca-8c3c902bc68d"
 }
