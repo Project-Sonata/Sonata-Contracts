@@ -1,5 +1,5 @@
 {
-  "id" : "11a1fea3-c8be-4dbf-8c6c-0605d5f07d28",
+  "id" : "60b74b6c-149f-445a-9199-98caf3d2917f",
   "request" : {
     "url" : "/authorization/register/confirm",
     "method" : "POST",
@@ -20,5 +20,5 @@
     },
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "11a1fea3-c8be-4dbf-8c6c-0605d5f07d28"
+  "uuid" : "60b74b6c-149f-445a-9199-98caf3d2917f"
 }
