@@ -29,9 +29,9 @@ Contract.make {
                 [
                         "updated": false,
                         "error_details": [
-                                "code": "old_password_mismatch",
-                                "description": "Old password in invalid",
-                                "possible_solution": "Use correct old password"
+                                "code": "new_password_pattern_mismatch",
+                                "description": "New password has invalid format",
+                                "possible_solution": "Use correct format for password"
                         ]
                 ]
         )
